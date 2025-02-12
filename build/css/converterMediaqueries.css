@@ -1,0 +1,39 @@
+@media all and (max-width: 480px){
+    html, body {
+        overflow: hidden;
+    }
+    .gameConsole, .articleBox{
+        margin-left: -41vw;
+        margin-top: -6rem;
+        width: 82vw;
+        height: 42vw;
+    }
+    .articleBox{
+        width: 44vw;
+        margin-left: -22vw;
+    }
+    .btnBox{
+        width: 14vw;
+        height: 14vw;
+    }
+    .btnBox p:first-child{
+        font-size: 3vw;
+    }
+    .btn3Box > p{
+        line-height: 8.5vw;
+    }
+    modal{
+        width: 26vw;
+        height: 14vw;
+        margin-top: -27vw;
+    }
+    .modal2{
+        margin-left: -13vw;
+    }
+    .modal1{
+        margin-left: -33vw;
+    }
+    .modal3{
+        margin-left: 8vw;
+    }
+}   

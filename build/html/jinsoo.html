@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>진수 변환기</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/converter.css" type="text/css">
+    <link rel="stylesheet" href="../css/converterMediaqueries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&amp;display=swap" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="icon" sizes="48x48" type="image/png" href="../img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	<main class="main">
+    	<header class="mainHeader">
+    		<h1 class="mainTitle">진수 변환기</h1>
+		</header>
+		<section class="sectionBox">
+			<img src="../img/gameConsole.png" class="gameConsole" alt='gameConsole'>
+
+			<!--first modal-->
+			<modal class="modal1">
+				<input class="inputText iB" type="text" id="inputText" placeholder="입력하시오.">
+				<select class="selectA" id="selectA">
+					<option value="" selected>진수 선택하기</option>
+					<option value="2진수">2진수</option>
+					<option value="8진수">8진수</option>
+					<option value="10진수">10진수</option>
+					<option value="16진수">16진수</option>
+				</select>
+			</modal>
+
+			<!--middle modal-->
+			<modal class="modal2">
+				<select class="selectB iB" id="selectB">
+					<option value="" selected>진수 선택하기</option>
+					<option value="2진수">2진수</option>
+					<option value="8진수">8진수</option>
+					<option value="10진수">10진수</option>
+					<option value="16진수">16진수</option>
+				</select>
+			</modal>
+
+			<!--last modal-->
+			<modal class="modal3" id="result">
+				<input class="resultBox iB" type="text" id="result" placeholder="RESULT" readonly>
+			</modal>
+
+			<!--mainButton-->
+			<article class="articleBox">
+				<div class="btn1Box btnBox">
+					<p>숫자, 진수<br>입력하기</p>
+				</div>
+				<div class="btn2Box btnBox">
+					<p>바꿀 진수<br>선택하기</p>
+				</div>
+				<div class="btn3Box btnBox resultBtn" id="resultBtn">
+					<p>변환하기</p>
+				</div>
+			</article>
+
+				<div class="alertBox" id="2Jinsoo">2진수가 아닙니다.<div class="outBox">확인</div></div>
+				<div class="alertBox" id="8Jinsoo">8진수가 아닙니다.<div class="outBox">확인</div></div>
+				<div class="alertBox" id="10Jinsoo">10진수가 아닙니다.<div class="outBox">확인</div></div>
+				<div class="alertBox" id="16Jinsoo">16진수가 아닙니다.<div class="outBox">확인</div></div>
+				<div class="alertBox" id="changeJinsoo">변환할 진수를 선택해 주세요<div class="outBox">확인</div></div>
+		</section>
+	</main>
+	<script src = "../js/jinsoo.js"></script>
+  </body>
+</html>
